@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Cairo', sans-serif;
+  direction: rtl;
+}
+
+.background {
+  background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7NTzDDd0-Cxdh4HptVEhbxrjERbChJxGQPMNJWQCR5FAsJ2-rfJURWS6lWN7s-zbXW7aW8bcRWxxGGTt6JhSBAEwdK6NKdqUMSHDNHdowx1T4Pp9zmPkCLnHF0uuAC2j16B_IxdwR59H3/s1600/%25D8%25AE%25D8%25B1%25D9%2588%25D9%2581%2B%25281%2529.png') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(6px);
+  background-color: rgba(0, 0, 0, 0.4); /* تغبيش + تغميق بسيط */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.message-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+  max-width: 600px;
+  animation: fadeIn 2s ease;
+}
+
+.message-box h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.message-box p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+.message-box span {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
